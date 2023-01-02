@@ -1,0 +1,10 @@
+// import "./01 倒计时/index.js";
+import "./index.html";
+import "./css/style.scss";
+import "./css/base.scss";
+import "./js/index.ts";
+import "./js/common.ts";
+import "layui/dist/css/layui.css";
+import "layui/dist/layui";
+import "jquery";
+import "swiper";

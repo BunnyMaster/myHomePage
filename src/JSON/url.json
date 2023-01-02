@@ -1,0 +1,17 @@
+{
+  "WebSite": {
+    "element-plus": { "Url": "https://element-plus.gitee.io/zh-CN/", "UrlName": "elementUI" },
+    "vant": { "Url": "https://vant-contrib.gitee.io/vant/#/zh-CN/search", "UrlName": "Vant" },
+    "bootstrap": { "Url": "https://v5.bootcss.com/", "UrlName": "Bootstrap" },
+    "echarts": { "Url": "http://echarts.baidu.com/", "UrlName": "Echarts" },
+    "d3": { "Url": "https://d3js.org/", "UrlName": "D3" },
+    "metro-ui-css": { "Url": "https://metroui.org.ua/examples.html", "UrlName": "metro-ui-css" },
+    "Hover:https": { "Url": "https://ianlunn.github.io/Hover/", "Urlname": "Hover" },
+    "Font-Awesome": { "Url": "https://fontawesome.com/?from=io", "Urlname": "Font-Awesome" },
+    "animatecss": { "Url": "https://daneden.github.io/animate.css/", "Urlname": "animatecss" },
+    "video.js": { "Url": "https://videojs.com/", "Urlname": "video.js" },
+    "layui": { "Url": "https://layui.gitee.io/v2/", "Urlname": "layui" },
+    "layui-vue": { "Url": "http://www.layui-vue.com/zh-CN/guide/getStarted", "Urlname": "layui-vue" }
+  },
+  "Shop": {}
+}

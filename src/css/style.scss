@@ -1,0 +1,346 @@
+// 导航栏顶部
+.NavTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #009688;
+  nav {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      float: left;
+      padding: 0 20px;
+      width: 150px;
+      height: 60px;
+      background-color: #009688;
+      z-index: 999;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .layui-nav {
+      flex: 1;
+    }
+  }
+}
+
+// 左侧导航栏
+.NavLeft {
+  position: fixed;
+  float: left;
+  top: 50%;
+  left: 0;
+  width: 200px;
+  transform: translateY(-50%);
+  overflow: hidden;
+  .layui-nav {
+    height: 100%;
+  }
+}
+
+// 搜索
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+  .SearchImages {
+    position: relative;
+    width: 180px;
+    img {
+      float: left;
+      display: block;
+      width: 140px;
+      height: 70px;
+      margin-bottom: 20px;
+      transform: scale(1.2);
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      float: left;
+      width: 35px;
+      height: 35px;
+      margin-top: 5px;
+      line-height: 35px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  input {
+    width: 500px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: 2px solid #1e9fff;
+    font-size: 16px;
+    font-family: inherit;
+    color: #2f4056;
+    box-sizing: border-box;
+    &::placeholder {
+      font-size: 15px;
+      color: #c2c2c2;
+    }
+  }
+
+  .layui-btn-normal {
+    width: 88px;
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #1e9fff;
+    box-sizing: border-box;
+  }
+}
+
+// 内容主体
+.Main {
+  // 轮播
+  #carousel {
+    margin-top: 3px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #5fb878;
+    box-sizing: border-box;
+    // 内容
+    .swiper-wrapper {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    // 前进和后提按钮
+    .swiper-button {
+      color: #FF5722;
+    }
+    // 分页器下面小点
+    .swiper-pagination {
+      span {
+        background-color: #FFB800;
+      }
+    }
+  }
+
+  // 菜单栏
+  .layui-tab {
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    float: left;
+    width: 900px;
+    border-left: 1px solid #009688;
+    border-bottom: 1px solid #009688;
+    //     background-color: #009688;
+    box-sizing: border-box;
+    .layui-tab-title {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .layui-tab-content {
+      height: 500px;
+      box-sizing: border-box;
+      border-right: 1px solid #eee;
+      overflow: hidden;
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        li {
+          float: left;
+          margin: 10px;
+          width: 159px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          background-color: #5fb878;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  //   推荐
+  .recommendd {
+    float: left;
+    width: 300px;
+    height: 552px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-right: 1px solid #009688;
+    border-bottom: 1px solid #009688;
+
+    // 顶部
+    .recommendd_Top {
+      h1 {
+        position: relative;
+        width: 300px;
+        height: 51px;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: center;
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        color: #009688;
+        box-sizing: border-box;
+        cursor: progress;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 130px;
+          text-align: center;
+          border-bottom: 2px solid #009688;
+        }
+        span {
+          float: left;
+          font-size: 16px;
+          font-weight: 800;
+        }
+        i {
+          float: left;
+          width: 30px;
+          height: 50px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 50px;
+          text-align: center;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+      }
+    }
+    // 底部
+    .recommendd_Bottom {
+      height: 500px;
+      overflow-y: auto;
+      .layui-card {
+        .layui-card-header {
+          h4 {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .layui-card-body {
+          p {
+            display: -webkit-box;
+            width: 265px;
+            font-size: 14px;
+            /*下面设置文本内容为单行，超出隐藏并显示三个点*/
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2; /*设置显示的行数*/
+            line-clamp: 2; /*设置显示的行数*/
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      img {
+        width: 265px;
+        height: 175px;
+      }
+    }
+  }
+}
+
+// 底部
+footer {
+  float: left;
+  width: 100%;
+  min-height: 200px;
+  background-color: #393d49;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  a{
+    color: #fff !important;
+  }
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    // 问题
+    .question {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 10px 0;
+      transition: all 0.5s;
+      ul {
+        li {
+          float: left;
+          min-width: 100px;
+          text-align: center;
+          background-color: #009688;
+          margin: 0 8px;
+          padding: 5px 0;
+          transition: all 0.5s;
+          a {
+            display: block;
+          }
+          &:hover {
+            background-color: #5fb878;
+          }
+        }
+      }
+    }
+    // 关于我们
+    .about {
+      margin: 10px 0;
+      width: 100%;
+    }
+    // link
+    .link {
+      ul {
+        li {
+          margin: 0 8px;
+          float: left;
+        }
+      }
+    }
+    // 二维码
+    .QR_Code {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      li {
+        width: 100px;
+        height: 120px;
+        background-color: #fff;
+        opacity: 0.6;
+        transition: all 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        span {
+          font-size: 12px;
+          color: #333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"></script>
+    <title>首页模板</title>
+  </head>
+  <!-- http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html -->
+  <body>
+    <!-- 导航栏和头部 -->
+    <div class="NavTop">
+      <!-- 导航栏 头部 -->
+      <nav>
+        <!-- logo图标 -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <ul class="layui-nav layui-bg-green" lay-filter="">
+          <li class="layui-nav-item"><a href="">最新活动</a></li>
+          <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+          <li class="layui-nav-item"><a href="">大数据</a></li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+              <!-- 二级菜单 -->
+              <dd><a href="">移动模块</a></dd>
+              <dd><a href="">后台模版</a></dd>
+              <dd><a href="">电商平台</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item"><a href="">社区</a></li>
+        </ul>
+        <ul class="layui-nav layui-bg-green">
+          <li class="layui-nav-item">
+            <a href="">控制台<span class="layui-badge">9</span></a>
+          </li>
+          <li class="layui-nav-item">
+            <a href="">个人中心<span class="layui-badge-dot"></span></a>
+          </li>
+          <li class="layui-nav-item">
+            <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img" />我</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;">修改信息</a></dd>
+              <dd><a href="javascript:;">安全管理</a></dd>
+              <dd><a href="javascript:;">退了</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 导航栏 左侧 -->
+    <nav class="NavLeft">
+      <ul class="layui-nav layui-nav-tree layui-bg-green" lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">默认展开</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">选项1</a></dd>
+            <dd><a href="javascript:;">选项2</a></dd>
+            <dd><a href="">跳转</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">解决方案</a>
+          <dl class="layui-nav-child">
+            <dd><a href="">移动模块</a></dd>
+            <dd><a href="">后台模版</a></dd>
+            <dd><a href="">电商平台</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">产品</a></li>
+        <li class="layui-nav-item"><a href="">大数据</a></li>
+      </ul>
+    </nav>
+
+    <div class="search w">
+      <div class="SearchImages">
+        <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="" />
+        <i class="layui-icon">&#xe669;</i>   
+      </div>
+      <input type="text" placeholder="请输入你要搜索的内容" />
+      <button class="layui-btn layui-btn-radius layui-btn-normal">搜索</button>
+    </div>
+
+    <!-- 内容主体 -->
+    <div class="Main">
+      <div class="w">
+        <!-- 轮播 -->
+        <div class="swiper" id="carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-zoom-container"><img src="./images/carousel/foot (1).jpeg" alt="" /></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="./images/carousel/foot (2).jpeg" alt="" /></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="./images/carousel/foot (3).jpeg" alt="" /></div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev swiper-button"></div>
+          <div class="swiper-button-next swiper-button"></div>
+
+          <!-- 如果需要滚动条 -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <!-- 菜单栏 -->
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+          <ul class="layui-tab-title">
+            <li class="layui-this">网站设置</li>
+            <li>用户管理</li>
+            <li>权限分配</li>
+            <li>商品管理</li>
+            <li>订单管理</li>
+          </ul>
+          <div class="layui-tab-content">
+            <ul>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+              <li>用户管理</li>
+              <li>权限分配</li>
+              <li>商品管理</li>
+              <li>订单管理</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 推荐 -->
+        <div class="recommendd">
+          <!-- 标题 -->
+          <div class="recommendd_Top">
+            <h1>
+              <!-- layui-anim-rotate layui-anim-loop 旋转 -->
+              <span>好物推荐</span>
+              <i class="layui-icon layui-icon-refresh layui-anim-rotate"></i>
+            </h1>
+          </div>
+          <!-- 内容 -->
+          <div class="recommendd_Bottom bar_scroll">
+            <ul>
+              <li>
+                <div class="layui-card">
+                  <div class="layui-card-header">
+                    <h4>环球人物杂志</h4>
+                  </div>
+                  <div class="layui-card-body">
+                    <p>总统就职仪式即将开始 国会大厦秩序井然总统就职仪式即将开始 国会大厦秩序井然总统就职仪式即将开始 国会大厦秩序</p>
+                    <img src="http://pic-bucket.ws.126.net/photo/0001/2021-01-20/G0QOK7OQ00AO0001NOS.jpg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="layui-card">
+                  <div class="layui-card-header">卡片面板</div>
+                  <div class="layui-card-body">
+                    卡片式面板面板通常用于非白色背景色的主体内<br />
+                    从而映衬出边框投影
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="layui-card">
+                  <div class="layui-card-header">卡片面板</div>
+                  <div class="layui-card-body">
+                    卡片式面板面板通常用于非白色背景色的主体内<br />
+                    从而映衬出边框投影
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="layui-card">
+                  <div class="layui-card-header">卡片面板</div>
+                  <div class="layui-card-body">
+                    卡片式面板面板通常用于非白色背景色的主体内<br />
+                    从而映衬出边框投影
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+      <div class="content w">
+        <!-- 问题 -->
+        <div class="question">
+          <ul>
+            <li><a href="">问题描述</a></li>
+            <li><a href="">问题描述</a></li>
+            <li><a href="">问题描述</a></li>
+          </ul>
+        </div>
+        <!-- 关于我们 -->
+        <div class="about">版权所有 © 2023 Mozilla Firefox. 北京谋智火狐信息技术有限公司</div>
+        <!-- link -->
+        <div class="link">
+          <ul>
+            <li>电话：18012062876</li>
+            <li>微信：1319900154</li>
+            <li>QQ：1319900154</li>
+          </ul>
+          <div class="QR_Code">
+            <ul>
+              <li>
+                <img src="https://img1.baidu.com/it/u=666927474,3753237121&fm=253&fmt=auto&app=138&f=GIF?w=504&h=500" alt="" />
+                <span>微信</span>
+              </li>
+              <li>
+                <img src="https://img1.baidu.com/it/u=666927474,3753237121&fm=253&fmt=auto&app=138&f=GIF?w=504&h=500" alt="" />
+                <span>微信</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
